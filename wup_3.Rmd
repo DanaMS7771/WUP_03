@@ -31,6 +31,10 @@ basicCN + geom_boxplot()
     This ggplot shows that back seats disproportionately consume more alcohol than the front and middle. The median of the back seats is almost at the Q4 measure in the front seats. Additionally the IQR of back seats is above the median of both the front and middle seats.The plot also shows that the middle is slightly higher than the front with a higher median and has more outliers. If this were a more robust assessment we would likely see that front and middle are more similar.  
   
 ## Numerical Summarys 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+    The median and mean of the back seats is substantially higher in the back seat class, far beyond what we would expect to see from random variations. The sample has n > 30 as well so we would not expect large variations like what is scene here. The $\sigma$ is also substantially larger in the back seats as well, more than double the other two categories listed.
 
 ## Inferential Tests
 
