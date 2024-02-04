@@ -37,6 +37,11 @@ favstats(alcohol~Seat,data=ucdavis1)
     The median and mean of the back seats is substantially higher in the back seat class, far beyond what we would expect to see from random variations. The sample has n > 30 as well so we would not expect large variations like what is scene here. The $\sigma$ is also substantially larger in the back seats as well, more than double the other two categories listed.
 
 ## Inferential Tests
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+The aov test here shows that there is a significant difference somewhere in the data, p = 0.000116 (<0.05).
 
 ## Conclusions
 
